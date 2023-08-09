@@ -1,95 +1,129 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-
 export default function Home() {
+  const navBarItems = [
+    "Sobre nós",
+    "Soluções",
+    "Ferramentas",
+    "Carreiras",
+    "Blog",
+    "Semana de dados",
+    "Contato",
+  ];
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div sx={{ height: "100vh", width: "100vw" }}>
+      <div style={{ marginRight: "10rem", marginLeft: "10rem" }}>
+        <header
+          style={{
+            display: "flex",
+            height: "110px",
+            justifyContent: "space-evenly",
+            alignItems: "center",
+          }}
+        >
+          <img src="bix.png" height={54} width={200} style={{}} />
+          <ul
+            style={{
+              display: "flex",
+              listStyle: "none",
+              margin: "auto",
+            }}
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            {navBarItems.map((item) => (
+              <li style={{ paddingLeft: "35px", fontSize: "1rem" }}>{item}</li>
+            ))}
+          </ul>
+        </header>
+      </div>
+
+      <div
+        style={{
+          display: "flex",
+          height: "548px",
+          width: "100%",
+          background: "linear-gradient(112.1deg, #000 11.4%, #33323d 70.2%)",
+          justifyContent: "space-between",
+        }}
+      >
+        <div
+          style={{
+            width: "45%",
+            padding: "2rem",
+            marginRight: "10rem",
+            marginLeft: "10rem",
+          }}
+        >
+          <p
+            style={{
+              color: "#fff",
+              marginTop: "4rem",
+              fontSize: "15px",
+              fontWeight: 500,
+            }}
+          >
+            O RESULTADO QUE SUA ORGANIZAÇÃO MERECE COM TECNOLOGIA DE PONTA
+          </p>
+          <p style={{ color: "#fff", fontSize: "51px", fontWeight: 600 }}>
+            Garanta o crescimento da sua empresa por meio dos dados!
+          </p>
+          <p style={{ fontSize: "16px", fontWeight: "400", color: "#fff" }}>
+            Oferecemos soluções em Engenharia de Dados, Business Intelligence,
+            Ciência de Dados e Desenvolvimento de Sistemas.
+          </p>
+          <button
+            style={{
+              background: "#3B49EE",
+              color: "#fff",
+              border: "none",
+              padding: "1rem",
+              borderRadius: "5px",
+              fontSize: "16px",
+              fontWeight: "500",
+            }}
+          >
+            Entre em contato
+          </button>
+        </div>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <img
+            // width={382}
+            // height={400}
+            src="BIX_TECH_ILUSTRA_3-q5kvhfl87emskcy8254uaq2l9y3srdcoueifgwcwlc.png"
+            style={{ marginRight: "10rem" }}
+          />
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
+      <div
+        style={{
+          background: "#0033CC",
+          height: "412px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <img src="BIX_TECH_ILUSTRA_5.png" height={400} width={452} />
+        <div style={{ width: "450px" }}>
+          <h2 style={{ color: "#fff", fontSize: "28px", fontWeight: 700 }}>
+            O que seus dados têm a dizer?
           </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+          <p style={{ color: "#fff" }}>
+            A <strong>Análise de Dados</strong> é essencial para uma
+            <br />
+            empresa<strong> conquistar resultados melhores</strong>. Quem aposta
+            em uma <b>cultura data-driven</b> está{" "}
+            <strong>melhor posicionada no mercado</strong> e alcançando seus
+            objetivos.
+            <br />
+            <br />
+            Pelos vários setores da economia, os clientes da{" "}
+            <strong>BIX Tecnologia</strong> já conquistaram diversos frutos
+            devido aos <strong>insights da Análise de Dados</strong>, como
+            diminuição de custos, processos mais rápidos e eficientes e aumento
+            nos lucros da organização.
           </p>
-        </a>
+        </div>
       </div>
-    </main>
-  )
+    </div>
+    // </main>
+  );
 }
