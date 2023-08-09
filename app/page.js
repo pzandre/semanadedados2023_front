@@ -1,3 +1,6 @@
+// Import <Image />
+import Image from "next/image";
+
 export default function Home() {
   const navBarItems = [
     "Sobre nós",
@@ -20,7 +23,7 @@ export default function Home() {
             alignItems: "center",
           }}
         >
-          <img src="bix.png" height={54} width={200} style={{}} />
+          <Image src="bix.png" height={54} width={200} style={{}} />
           <ul
             style={{
               display: "flex",
@@ -29,7 +32,7 @@ export default function Home() {
             }}
           >
             {navBarItems.map((item) => (
-              <li style={{ paddingLeft: "35px", fontSize: "1rem" }}>{item}</li>
+              <li key={item} style={{ paddingLeft: "35px", fontSize: "1rem" }}>{item}</li>
             ))}
           </ul>
         </header>
@@ -84,7 +87,7 @@ export default function Home() {
           </button>
         </div>
         <div style={{ display: "flex", alignItems: "center" }}>
-          <img
+          <Image
             // width={382}
             // height={400}
             src="BIX_TECH_ILUSTRA_3-q5kvhfl87emskcy8254uaq2l9y3srdcoueifgwcwlc.png"
@@ -101,7 +104,7 @@ export default function Home() {
           alignItems: "center",
         }}
       >
-        <img src="BIX_TECH_ILUSTRA_5.png" height={400} width={452} />
+        <Image src="BIX_TECH_ILUSTRA_5.png" height={400} width={452} />
         <div style={{ width: "450px" }}>
           <h2 style={{ color: "#fff", fontSize: "28px", fontWeight: 700 }}>
             O que seus dados têm a dizer?
