@@ -83,7 +83,7 @@ export default function Home() {
               fontWeight: "500",
             }}
           >
-            Entre em contato
+            Entre em contato!
           </button>
         </div>
         <div style={{ display: "flex", alignItems: "center" }}>
