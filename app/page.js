@@ -83,7 +83,7 @@ export default function Home() {
               fontWeight: "500",
             }}
           >
-            Entre em contato
+            Entre em contato!
           </button>
         </div>
         <div style={{ display: "flex", alignItems: "center" }}>
@@ -122,7 +122,7 @@ export default function Home() {
             <strong>BIX Tecnologia</strong> já conquistaram diversos frutos
             devido aos <strong>insights da Análise de Dados</strong>, como
             diminuição de custos, processos mais rápidos e eficientes e aumento
-            nos lucros da organização.
+            nos lucros da organização. 
           </p>
         </div>
       </div>
