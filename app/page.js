@@ -110,7 +110,7 @@ export default function Home() {
             O que seus dados têm a dizer?
           </h2>
           <p style={{ color: "#fff" }}>
-            A <strong>Análise de Dados</strong> é essencial para uma
+            A <strong>Análise de Dados</strong> é essencial para uma 
             <br />
             empresa<strong> conquistar resultados melhores</strong>. Quem aposta
             em uma <b>cultura data-driven</b> está{" "}
