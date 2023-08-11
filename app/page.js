@@ -109,7 +109,7 @@ export default function Home() {
           <h2 style={{ color: "#fff", fontSize: "28px", fontWeight: 700 }}>
             O que seus dados têm a dizer?
           </h2>
-          {/* <p style={{ color: "#fff" }}>
+          <p style={{ color: "#fff" }}>
             A <strong>Análise de Dados</strong> é essencial para uma
             <br />
             empresa<strong> conquistar resultados melhores</strong>. Quem aposta
@@ -123,7 +123,7 @@ export default function Home() {
             devido aos <strong>insights da Análise de Dados</strong>, como
             diminuição de custos, processos mais rápidos e eficientes e aumento
             nos lucros da organização. 
-          </p> */}
+          </p>
         </div>
       </div>
     </div>
